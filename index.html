@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <title>MEGATRON · Centro de comando</title>
+    
+    <link rel="stylesheet" href="/megatron-ui/style-9fea0d6f5cd0777a.css" integrity="sha384-cIPwFqJJSXMWly8XPtLmsO+hr/AUyyTeFWxJ6p7xfWAIpkrzZ4P3J3DLKPUm5EPu"/>
+    
+<script type="module">
+import init, * as bindings from '/megatron-ui/megatron-web-f388369ce41ac36d.js';
+const wasm = await init({ module_or_path: '/megatron-ui/megatron-web-f388369ce41ac36d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+  <link rel="modulepreload" href="/megatron-ui/megatron-web-f388369ce41ac36d.js" crossorigin="anonymous" integrity="sha384-I1Ti27STK+1JC1vQaB1Ql9execSsraY3F9ia99tB6sQrj32ukAlqhT3Z0KC5O9Hg"><link rel="preload" href="/megatron-ui/megatron-web-f388369ce41ac36d_bg.wasm" crossorigin="anonymous" integrity="sha384-UwVMBfnQjiMhMWsAd5U77favTZ1ihX5pEKFt5EM0sw8bi/yUFHptVUcLK26zpBFU" as="fetch" type="application/wasm"></head>
+  <body></body>
+</html>
